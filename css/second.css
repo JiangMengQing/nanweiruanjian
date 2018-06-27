@@ -1,0 +1,889 @@
+body{
+     background-color: #F8FAFB;
+ }
+.header .banner{
+    width: 100%;
+    height: 349px;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+}
+.header .banner .title{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    color: #fff;
+    margin: 80px 0 0 80px;
+}
+.header .banner .title h2{
+    font-size: 48px;
+}
+.header .banner .title p{
+    font-size: 16px;
+}
+.header .banner img{
+    margin: 0 -100%;
+    width:auto;
+    display: inline-block;
+}
+.content{
+    width: 1200px;
+    margin: 10px auto 0;
+    overflow: hidden;
+}
+/*企业概况 建党活动 列表 开始*/
+.content .content-left{
+    width: 200px;
+    float: left;
+}
+.content .content-left ul li{
+    width: 200px;
+    box-sizing: border-box;
+    padding-left: 40px;
+    background-color: #fff;
+    border-bottom:1px solid #EEE;
+    line-height: 52px;
+    font-size: 14px;
+}
+.content .content-left ul li:first-child{
+    background-color: #8F283C;
+}
+.content .content-left ul li a{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    color: #333;
+}
+.content .content-left ul li:first-child a{
+    color: #fff;
+}
+.content .content-left ul li:hover{
+    background-color: #8F283C;
+}
+.content .content-left ul li:hover a{
+    color: #fff;
+}
+/*企业概况 建党活动 列表 结束*/
+
+/*企业概况 开始*/
+
+/*右侧企业概况 开始*/
+.content .content-right{
+    width: 998px;
+    float: left;
+    box-sizing: border-box;
+    margin-left: 2px;
+    padding: 25px 55px 50px 25px;
+    background-color: #fff;
+}
+.content .content-right h3{
+    font-size: 24px;
+    color: #333;
+    padding-left: 10px;
+    border-left:2px solid #8F283C;
+    margin-bottom: 10px;
+}
+.content .content-right p{
+    padding-left: 50px;
+    font-size: 18px;
+    text-indent:2em;
+    line-height: 28px;
+    color: #333;
+}
+/*右侧企业概况 结束*/
+@media (max-width: 1024px){
+    .header .banner{
+        display: none;
+    }
+    .content{
+        margin-top: 70px;
+        width: 100%;
+    }
+    .content .content-left {
+        display: none;
+    }
+}
+@media (max-width: 720px){
+    .content .content-right{
+        width: 100%;
+        padding: 10px 40px 35px 10px;
+    }
+    .content .content-right h3 {
+        font-size: 20px;
+    }
+    .content .content-right p {
+        width: 100%;
+        font-size: 18px;
+        box-sizing: border-box;
+        font-family:"宋体";
+    }
+}
+/*企业概况 结束*/
+
+/*党建活动 开始*/
+
+.content .content-right .newsright ul {
+    margin-top: 20px;
+}
+.content .content-right .newsright ul li{
+    width: 100%;
+    height: 115px;
+}
+.content  .content-right .newsright ul li:hover{
+    border-left:1px solid #eee;
+    background-color: rgb(246,241,242);
+}
+.content  .newsright ul li p{
+    padding: 0;
+    text-indent:0;
+    font-size: 14px;
+    color: #999;
+}
+.content  .newsright ul li .text a{
+    font-size: 16px;
+    color: #333;
+    padding-left: 18px;
+    background: url(../image/active.png) no-repeat left center;
+}
+.content  .newsright ul li .text a:hover{
+    color: #8F283C;
+    text-decoration: underline;
+}
+.content  .newsright ul li .text p{
+    width: 793px;
+    line-height: 22px;
+}
+
+/*下一页按钮 开始*/
+.content  .content-right .next{
+    margin-top: 10px;
+    float: right;
+    margin-right: 10px;
+}
+.content  .content-right .next .btn1{
+    border-radius: 0px;
+    border: 1px solid #000080;
+    background-color: #2E6AB1;
+    color: #fff;
+    font-weight: bold;
+}
+.content  .content-right .next .btn2{
+    border-radius: 2px;
+    border: 1px solid #9AAFE5;
+    background-color: #EDEDED;
+    color: #2E6AB1;
+    cursor: pointer;
+}
+.content  .content-right .next .btn2:hover{
+    background-color: transparent;
+    color: #000;
+}
+/*下一页按钮结束*/
+
+@media (max-width: 1024px){
+    .content{
+        background-color: #fff;
+    }
+    .content .content-right {
+        margin: 0 2%;
+        padding: 0;
+        width: 96%;
+    }
+    .content .content-right .newsright ul li{
+        padding-left: 10px;
+        height:155px;
+    }
+    .content .content-right ul li .date{
+        height:auto;
+    }
+    .content .content-right ul li .date span b{
+        font-size: 18px;
+        font-weight: 500;
+    }
+    .content .content-right ul li .date p{
+        display: none;
+    }
+    .content  .newsright ul li .text {
+        width: 100%;
+        margin: 0;
+    }
+    .content  .newsright ul li .text p {
+        width: 97%;
+    }
+}
+@media (max-width: 720px) {
+    .content  .newsright ul li .text p{
+        display: none;
+    }
+    .content .content-right .newsright ul li{
+        height:100px;
+    }
+}
+/*党建活动 结束*/
+
+
+/*智慧城市 开始*/
+.header .banner .city-title{
+    margin-left: 140px;
+}
+.header .banner .city-title p{
+    text-align: left;
+    line-height: 30px;
+}
+.city-content {
+    width: 100%;
+    margin-top: 0;
+}
+/*公共部分 开始*/
+.city-content .city-all {
+    width: 100%;
+}
+.city-content  .city-all .city {
+    width: 1200px;
+    margin: 0 auto;
+}
+.city-content  .city-all .city .city-text{
+    text-align: center;
+    padding-top: 63px;
+}
+.city-content  .city-all .city .city-text h2{
+    font-size: 28px;
+    color: #C1193A;
+}
+.city-content  .city-all .city .city-text p{
+    font-size: 16px;
+    color: #333;
+    line-height: 66px;
+}
+.city-content  .city-all .city .city-text p span{
+    color: #C1193A;
+}
+.city-content  .city-all .city .city-text i{
+    font-style: normal;
+}
+.city-content  .city-all .city .city-des{
+    margin-top: 20px;
+}
+@media (max-width: 1024px) {
+    .city-content  .city-all .city{
+        width: 95%;
+    }
+    .city-content  .city-all .city .city-text {
+        padding-top: 30px;
+    }
+    .city-content  .city-all .city .city-text p,i{
+        display: none;
+    }
+}
+@media (max-width: 720px) {
+    .city-content  .city-all .city .city-text h2{
+        font-size: 22px;
+    }
+}
+/*公共部分 结束*/
+
+/*总体思路 开始*/
+.city-content  .city-all1{
+    background-color: #F9F9F9;
+    overflow: hidden;
+}
+.city-content  .city-all1 .city1 .city-des1 img{
+    float: left;
+}
+.city-content  .city-all1 .city1 .city-des1 .city-detial{
+    color: #333;
+    width: 480px;
+    float: right;
+    margin-right: 50px;
+    margin-top: 50px;
+}
+.city-content  .city-all1 .city1 .city-des1 .city-detial h3{
+    font-size: 18px;
+    line-height: 42px;
+}
+.city-content  .city-all1 .city1 .city-des1 .city-detial p{
+    line-height: 26px;
+}
+.city-content  .city-all1 .city1 .city-des1 span{
+    color: #C1193A;
+}
+@media (max-width:1024px) {
+
+    .city-content  .city-all1 .city1 .city-des1{
+        margin: 0;
+    }
+    .city-content  .city-all1 .city1 .city-text1{
+        padding-top: 110px;
+    }
+
+    .city-content  .city-all1 .city1 .city-des1 img{
+        display: none;
+    }
+    .city-content  .city-all1 .city1 .city-des1 .city-detial {
+        width: 100%;
+        margin:0;
+        padding-bottom: 30px;
+    }
+}
+@media (max-width:720px) {
+    .city-content  .city-all1 .city1 .city-des1 .city-detial h3{
+        font-size: 14px;
+        font-weight: bold;
+        line-height: 30px;
+    }
+    .city-content  .city-all1 .city1 .city-des1 .city-detial p{
+        font-size: 14px;
+    }
+}
+/*总体思路 结束*/
+
+/*技术架构 开始*/
+.city-content  .city-all2{
+    background-color: #fff;
+    overflow: hidden;
+}
+.city-content  .city-all2 .city2 .city-des2 img{
+    float: left;
+}
+@media (max-width: 1024px) {
+    .city-content  .city-all2 .city2 .city-des2 img{
+        width: 100%;
+    }
+
+
+}
+/*技术结构 结束*/
+
+/*核心技术 开始*/
+.city-content  .city-all3{
+    background-color: #F9F9F9;
+}
+.city-content  .city-all3 .city3 .city-des3 ul{
+    height: 440px;
+    margin-bottom: 70px;
+}
+.city-content  .city-all3 .city3 .city-des3 ul li{
+    margin-top: 10px;
+    float: left;
+    width: 25%;
+    height: 400px;
+    box-sizing: border-box;
+    border: 1px solid #DBDBDD;
+    border-left-color: transparent;
+    text-align: center;
+}
+.city-content  .city-all3 .city3 .city-des3 ul li:first-child{
+    border-left:1px solid #DBDBDD;
+}
+.city-content  .city-all3 .city3 .city-des3 ul li .cdes3-top{
+    height: 120px;
+    box-sizing: border-box;
+    padding:32px 20px 0px 20px;
+    background-color: #F5F5F5;
+}
+.city-content  .city-all3 .city3 .city-des3 ul li .cdes3-top h3{
+    color: #333;
+    font-size: 20px;
+    margin-bottom: 18px;
+}
+.city-content  .city-all3 .city3 .city-des3 ul li .cdes3-bottom{
+    height: 278px;
+    box-sizing: border-box;
+    padding-top: 10px;
+    background-color: #fff;
+}
+.city-content  .city-all3 .city3 .city-des3 ul li .cdes3-bottom p{
+    color: #333;
+    font-size: 16px;
+    line-height: 53px;
+}
+.city-content  .city-all3 .city3 .city-des3 ul li:hover{
+    height: 440px;
+    border-color: #C1193A;
+    transform: translateY(-20px);
+}
+.city-content  .city-all3 .city3 .city-des3 ul li:hover .cdes3-top{
+    height: 140px;
+    background-color: #C1193A;
+    color: #fff;
+}
+.city-content  .city-all3 .city3 .city-des3 ul li:hover .cdes3-top h3{
+    color: #fff;
+}
+.city-content  .city-all3 .city3 .city-des3 ul li:hover .cdes3-bottom{
+    height: 298px;
+}
+
+@media (max-width:1024px){
+    .city-content  .city-all3 .city3 .city-des3 ul{
+        width: 100%;
+        height:auto;
+        padding-bottom: 40px;
+        margin-bottom: 0;
+    }
+    .city-content  .city-all3 .city3 .city-des3 ul li{
+        float: none;
+        width: 100%;
+        height:90px;
+        box-sizing: border-box;
+        border: none;
+    }
+    .city-content  .city-all3 .city3 .city-des3 ul li:first-child{
+        border: none;
+    }
+    .city-content  .city-all3 .city3 .city-des3 ul li .cdes3-top{
+        height: 90px;
+        padding: 0;
+        border: 1px solid #DBDBDD;
+    }
+    .city-content  .city-all3 .city3 .city-des3 ul li .cdes3-bottom{
+        display: none;
+    }
+    .city-content  .city-all3 .city3 .city-des3 ul li:hover{
+        height:auto;
+        transform: translateY(0);
+        border:none;
+    }
+    .city-content  .city-all3 .city3 .city-des3 ul li:hover .cdes3-top{
+        height: 90px;
+        background-color: #F5F5F5;
+        color: #333;
+    }
+    .city-content  .city-all3 .city3 .city-des3 ul li:hover .cdes3-top h3{
+        color: #333;
+    }
+
+}
+/*核心技术 结束*/
+
+/*运营模式 开始*/
+.city-content  .city-all4{
+    background-color: #fff;
+    overflow: hidden;
+}
+.city-content  .city-all4 .city4 .city-des4{
+    padding-top: 25px;
+    overflow: hidden;
+}
+.city-content  .city-all4 .city4 .city-des4 img{
+    float: left;
+}
+.city-content  .city-all4 .city4 .city-des4 .city-detia4{
+    float: left;
+    margin-top: 20px;
+}
+.city-content  .city-all4 .city4 .city-des4 .city-detia4 p{
+    font-size: 20px;
+    color: #333;
+    margin-left: 100px;
+    line-height: 52px;
+}
+.city-content  .city-all4 .city4 .city-des4 p span{
+    margin-right: 10px;
+    color: #C1193A;
+}
+@media (max-width: 1024px) {
+    .city-content  .city-all4 .city4 .city-des4{
+        margin: 0;
+    }
+    .city-content  .city-all4 .city4 .city-des4 img{
+        display: none;
+    }
+    .city-content  .city-all4 .city4 .city-des4 .city-detia4{
+        width: 90%;
+        margin: 0;
+    }
+    .city-content  .city-all4 .city4 .city-des4 .city-detia4 p{
+        margin: 0;
+        font-size: 14px;
+        line-height: 45px;
+    }
+}
+/*运营模式 结束*/
+
+/*南威优势 开始*/
+.city-content  .city-all5 .city5 .city-des5 ul{
+    width: 1040px;
+    height: 340px;
+    margin: 30px auto 50px;
+    display: flex;
+    justify-content: space-around;
+}
+.city-content  .city-all5 .city5 .city-des5 ul li{
+    float: left;
+    width: 188px;
+    height: 340px;
+    box-sizing: border-box;
+    padding: 0 30px 0 20px;
+    background: url("../image/city4.png") no-repeat #fff;
+}
+.city-content  .city-all5 .city5 .city-des5 ul li:nth-child(1){
+    background-position: 0 0;
+}
+.city-content  .city-all5 .city5 .city-des5 ul li:nth-child(2){
+     background-position: -188px 0;
+ }
+.city-content  .city-all5 .city5 .city-des5 ul li:nth-child(3){
+    background-position: -376px 0;
+}
+.city-content  .city-all5 .city5 .city-des5 ul li:nth-child(4){
+    background-position: -564px 0;
+}
+.city-content  .city-all5 .city5 .city-des5 ul li:nth-child(5){
+    background-position: -752px 0;
+}
+.city-content  .city-all5 .city5 .city-des5 ul li p{
+    text-align: center;
+    margin-top: 125px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #333;
+}
+.city-content  .city-all5 .city5 .city-des5 ul li span{
+    margin-top: 10px;
+    color: #999;
+    line-height: 25px;
+}
+@media(max-width: 1024px){
+    .city-content  .city-all5{
+        background-color: #F9F9F9;
+    }
+    .city-content  .city-all5 .city5 .city-des5{
+        overflow: hidden;
+    }
+    .city-content  .city-all5 .city5 .city-des5 ul{
+        flex-wrap:wrap;
+        width: 100%;
+        height:auto;
+        margin-bottom: 30px;
+    }
+    .city-content  .city-all5 .city5 .city-des5 ul li{
+        width: 100%;
+        height:auto;
+        float: none;
+        /*height: 200px;*/
+        border: 1px solid #eee;
+        margin-top: 15px;
+        padding:13px 0 21px 0;
+        text-align: center;
+        background-image: none;
+    }
+    .city-content  .city-all5 .city5 .city-des5 ul li p{
+        line-height: 30px;
+        margin: 0;
+    }
+}
+
+/*典型案例 开始*/
+.city-content  .city-all6{
+    background-color: #fff;
+    overflow: hidden;
+}
+.city-content  .city-all6 .city6 .city-des6 img{
+    float: left;
+}
+.city-content  .city-all6 .city6 .city-des6 .city-detia6{
+    width: 335px;
+    float: left;
+    padding-left: 29px;
+    border-left:1px solid #ccc;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+.city-content  .city-all6 .city6 .city-des6 .city-detia6 p{
+    font-size: 22px;
+    color: #333;
+    margin-top: 27px;
+}
+.city-content  .city-all6 .city6 .city-des6 .city-detia6 p:hover{
+    color: #C1193A;
+}
+.city-content  .city-all6 .city6 .city-des6 .city-detia6 span{
+    display: inline-block;
+    line-height: 25px;
+    color: #999;
+}
+.city-content  .city-all6 .city6 .city-des6 .city-detia6 span:last-child {
+    margin-bottom: 27px;
+}
+@media (max-width: 1024px) {
+    .city-content  .city-all6{
+        width: 100%;
+    }
+    .city-content  .city-all6 .city6 .city-des6 img{
+        width: 100%;
+        margin: 0 auto;
+        float: none;
+    }
+    .city-content  .city-all6 .city6 .city-des6 .city-detia6{
+        padding: 0px;
+        width: 100%;
+        float: none;
+        border-left:none;
+    }
+    .city-content  .city-all6 .city6 .city-des6 .city-detia6 p{
+        font-size: 18px;
+    }
+    .city-content  .city-all6 .city6 .city-des6 .city-detia6 span{
+        width: 100%;
+        line-height: 34px;
+        padding-bottom: 11px;
+        border-bottom:1px dashed #E3E3E3;
+    }
+    .city-content  .city-all6 .city6 .city-des6 .city-detia6 span:last-child {
+        margin-bottom: 0;
+    }
+}
+@media(max-width: 720px){
+    .city-content  .city-all6 .city6 .city-des6 .city-detia6 span{
+        line-height: 25px;
+    }
+
+}
+/*智慧城市 结束*/
+
+
+/*产品&解决方案 开始*/
+
+/*公共部分 开始*/
+.header .banner .solve-title{
+    color: #8F283C;
+    text-align: left;
+}
+.header .banner .solve-title h2{
+    font-size: 50px;
+}
+.header .banner .solve-title p{
+    font-size: 18px;
+}
+.header .banner .solve-title ul li{
+    text-align: center;
+    line-height: 35px;
+    float: left;
+    width: 90px;
+    height: 35px;
+    box-sizing: border-box;
+    border: 1px solid #8F283C;
+    margin-right: 14px;
+    margin-top: 28px;
+    border-radius: 17px;
+}
+.header .banner .solve-title ul li a{
+    color: #8F283C;
+}
+.header .banner .solve-title ul li:hover{
+    background-color: #8F283C;
+}
+.header .banner .solve-title ul li:hover a{
+    color: #fff;
+}
+.solve-content{
+    margin: 0;
+    width: 100%;
+    background-color: #fff;
+}
+.solve-content .solve{
+    width: 1200px;
+    margin: 30px auto 0;
+    overflow: hidden;
+}
+/*公共部分 结束*/
+/*智慧政务 开始*/
+.solve-content .solve1 .solve_l{
+    float: left;
+}
+.solve-content .solve1 .solve_r{
+    float: right;
+}
+.solve-content .solve .solve_des{
+    margin-top: 120px;
+    width: 500px;
+    color: #333;
+}
+.solve-content .solve .solve_des h2{
+    width: 120px;
+    height: 32px;
+    padding-left: 10px;
+    font-size: 20px;
+    border-left:4px solid  #2092DA;
+    vertical-align: center;
+    line-height: 32px;
+    margin-bottom: 10px;
+}
+.solve-content .solve .solve_des h2 span{
+    float: right;
+    width: 32px;
+    height: 32px;
+    box-sizing: border-box;
+    border:2px solid #2092DA;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 5px;
+    cursor: pointer;
+    animation: action 1s alternate infinite;
+}
+@keyframes action {
+    from{
+        box-shadow: 0 0 5px #2092DA;
+    }
+    to{
+        box-shadow: 0 0 30px darkturquoise;
+    }
+}
+.solve-content .solve .solve_des h2 span i{
+    display:inline-block;
+    width: 9px;
+    height: 9px;
+    border: 2px solid #2092DA;
+    transform:translateX(-25%) rotate(45deg);
+    border-bottom:none;
+    border-left:none;
+}
+.solve-content .solve .solve_des h2 span:hover{
+    background-color: #2092DA;
+}
+.solve-content .solve .solve_des h2 span:hover i{
+    border-color: #fff;
+}
+.solve-content .solve .solve_des p{
+    text-indent:2em;
+    font-size: 16px;
+    line-height: 36px;
+    padding-bottom: 18px;
+    border-bottom:1px dashed #ccc;
+}
+.solve-content .solve .solve_des ul{
+    margin-top: 10px;
+}
+.solve-content .solve .solve_des ul li{
+    float: left;
+    border: 1px solid #2092DA;
+    line-height: 34px;
+    padding:0 18px;
+    margin-right: 10px;
+    margin-top: 14px;
+    border-radius: 17px;
+}
+.solve-content .solve .solve_des ul li a{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    color: #2092DA;
+}
+.solve-content .solve .solve_des ul li:hover{
+    background-color: #2092DA;
+}
+.solve-content .solve .solve_des ul li:hover a{
+    color: #fff;
+}
+/*智慧政务 结束*/
+
+/*智慧公安 开始*/
+.solve-content .solve2 .img{
+    float: right;
+}
+.solve-content .solve2 .solve_des {
+    float: left;
+}
+.solve-content .solve .solve_des2 h2 {
+    border-left:4px solid  #28C527;
+}
+.solve-content .solve .solve_des2 h2 span{
+    border-color:#28C527;
+
+}
+.solve-content .solve .solve_des2 h2 span i{
+    border: 2px solid #28C527;
+    border-bottom:none;
+    border-left:none;
+}
+.solve-content .solve .solve_des2 h2 span:hover{
+    background-color: #28C527;
+}
+.solve-content .solve .solve_des2 ul li{
+    border: 1px solid #28C527;
+}
+.solve-content .solve .solve_des2 ul li:hover{
+    background-color: #28C527;
+}
+.solve-content .solve .solve_des2 ul li a{
+    color: #28C527;
+}
+/*智慧公安 结束*/
+
+/*智慧司法 开始*/
+.solve-content .solve .solve_des3 h2 {
+    border-left:4px solid  #FF7800;
+}
+.solve-content .solve .solve_des3 h2 span{
+    border-color:#FF7800;
+    animation: action3 1s alternate infinite;
+}
+@keyframes action3 {
+    from{
+        box-shadow: 0 0 5px #FF7800;
+    }
+    to{
+        box-shadow: 0 0 30px orange;
+    }
+}
+.solve-content .solve .solve_des3 h2 span i{
+    border: 2px solid #FF7800;
+    border-bottom:none;
+    border-left:none;
+}
+.solve-content .solve .solve_des3 h2 span:hover{
+    background-color: #FF7800;
+}
+.solve-content .solve .solve_des3 ul li{
+    border: 1px solid #FF7800;
+}
+.solve-content .solve .solve_des3 ul li:hover{
+    background-color: #FF7800;
+}
+.solve-content .solve .solve_des3 ul li a{
+    color: #FF7800;
+}
+
+@media (max-width: 1024px){
+    .solve-content .solve{
+        width: 95%;
+        margin: 0 auto;
+        /*overflow: hidden;*/
+    }
+    .solve-content .solve .img{
+        display: none;
+    }
+    .solve-content .solve .solve_des{
+        margin-top: 20px;
+        margin-bottom: 30px;
+        float: none;
+        width: 100%;
+    }
+    .solve-content .solve .solve_des ul{
+        overflow: hidden;
+    }
+}
+/*智慧司法 结束*/
+
+
+/*投资者关系管理*/
+.content .touzi ul li:first-child{
+    background-color: #fff;
+}
+.content .touzi ul li:first-child a{
+    color: #333
+}
+.content .touzi ul li:nth-child(2){
+    background-color: #8F283C;
+}
+.content .touzi ul li:nth-child(2) a{
+    color: #fff;
+}
+/*
+.touzi ul li:first-child{
+    background-color: #fff;
+}*/

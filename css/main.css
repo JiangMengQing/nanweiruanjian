@@ -1,0 +1,822 @@
+html{color:#000;background:#FFF}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0}
+table{border-collapse:collapse;border-spacing:0}
+fieldset,img{border:0}
+address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal}
+ol,ul{list-style:none}
+caption,th{text-align:left}
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}
+q:before,q:after{content:''}
+abbr,acronym{border:0;font-variant:normal}
+sup{vertical-align:text-top}
+sub{vertical-align:text-bottom}
+input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit;*font-size:100%}
+legend{color:#000}#yui3-css-stamp.cssreset{display:none}
+a{text-decoration: none; color: #666;}
+body{font: 14px "微软雅黑"; color: #666;background-color: #fff;}
+
+.header{
+    width: 100%;
+}
+/*logo和导航条 开始*/
+.header .top{
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    background-color: #fff;
+}
+.header .top p{
+    display: none;
+}
+.header .top .logo{
+    width: 290px;
+    height: 40px;
+    float: left;
+    box-sizing: border-box;
+    margin-top: 16px;
+    margin-left: 25px;
+    background: url("../image/logo.jpg") no-repeat left -16px;
+}
+/*导航条开始*/
+.header .top .nav{
+    float: right;
+    line-height: 60px;
+    margin-right: 4%;
+    margin-top: 10px;
+}
+.header .top #mnav{
+    display: none;
+}
+.header .top .nav ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+.header .top .nav ul .one{
+    float: left;
+    font-size: 16px;
+    width: 120px;
+    text-align: center;
+    position: relative;
+}
+.header .top .nav ul .one:first-child{
+    width: 110px;
+}
+.header .top .nav ul .one a{
+    color: #333;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.header .top .nav ul .one:hover{
+    background-color: rgb(143,40,60);
+}
+.header .top .nav ul .one:hover a{
+    color: #fff;
+}
+/*导航分目录 开始*/
+.header .top .nav ul .one .two{
+    position: absolute;
+    top: 60px;
+    left: 0;
+    padding: 10px;
+    background-color: #000;
+    opacity: 0.7;
+    display: none;
+}
+.header .top .nav ul .one .two li{
+    font-size: 14px;
+    float: left;
+    line-height: 28px;
+    padding-left: 20px;
+}
+.header .top .nav ul .one .two li a{
+    color: #fff;
+}
+.header .top .nav ul .one .two li a:hover{
+    text-decoration: underline;
+}
+.header .top .nav ul .one:hover .two{
+    display: block;
+}
+/*导航分目录结束*/
+.header .banner{
+    margin-top: 70px;
+}
+@media (max-width:1024px) {
+    .header .top p{
+        display: none;
+    }
+
+    .header .top .logo{
+        width: 168px;
+        height: 47px;
+        margin-top: 13px;
+        background: url("../image/logo.jpg") no-repeat left -185px;
+    }
+    .header .top .nav{
+        margin-right:2%;
+    }
+    .header .top .nav ul .one {
+        font-size: 14px;
+        width: 100px;
+    }
+    .header .top .nav ul .one:hover .two{
+        display: none;
+    }
+}
+@media (max-width:720px) {
+    .header .top .shadow{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #000;
+        opacity:0.8;
+    }
+    .header .top p{
+        display: block;
+        width: 100%;
+        height: 60px;
+        box-sizing: border-box;
+        position: absolute;
+        top: 0;
+        left: 0;
+        /*font-weight:bold;*/
+        font-size: 24px;
+        color: #fff;
+        line-height: 60px;
+        padding-left: 20px;
+        border-bottom:1px solid #4E4E4E;
+        cursor: pointer;
+    }
+    .header .top p span{
+        float: right;
+        display: block;
+        margin-right: 20px;
+        margin-top: 20px;
+        text-align: center;
+        line-height: 30px;
+        font-size: 30px;
+        font-weight:bold;
+        color: #848484;
+    }
+    .header .top .logo{
+        float: none;
+        width: 290px;
+        height: 40px;
+        margin:0 auto;
+        background: url("../image/logo.jpg") no-repeat left -16px;
+    }
+    .header .top .nav{
+        display: none;
+    }
+    .header .top #mnav{
+        display: none;
+        width: 100%;
+        margin-top: 20px;
+        background-color: #fff;
+        position: absolute;
+        top: 50px;
+        left: 0;
+    }
+    .header .top #mnav ul {
+        width: 100%;
+        height: 96px;
+    }
+    .header .top #mnav ul li{
+        width: 50%;
+        float: left;
+        text-align:center;
+        line-height: 24px;
+    }
+}
+/*导航条结束*/
+/*logo和导航条结束*/
+.header .banner img{
+    width: 100%;
+    display: block;
+}
+/* 智慧城市 开始*/
+.main .content1{
+    width: 100%;
+    /*height: 1026px;*/
+    background-color: #F5F5F5;
+    position: relative;
+}
+.main .mcontent1{
+    display: none;
+}
+.main .content1 .classify{
+    width: 1120px;
+    height: 306px;
+    margin: 0 auto;
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    transform:translateX(-50%);
+}
+.main .content1 .classify .calssify-all{
+    float: left;
+    width: 280px;
+    height: 306px;
+    box-sizing: border-box;
+    border: 1px solid #E1E1E3;
+    transition:2s;
+}
+.main .content1 .classify .calssify-all .classify-top{
+    height: 120px;
+    box-sizing: border-box;
+    padding-top: 42px;
+    border-bottom:1px solid #E1E1E3;
+    background-color: #fff;
+}
+.main .content1 .classify .calssify-all .classify-top h4{
+    font-size: 22px;
+    height: 22px;
+    line-height: 22px;
+    text-align: center;
+    color: #666;
+}
+.main .content1 .classify .calssify-all .classify-top p{
+    text-align: center;
+    line-height: 48px;
+}
+.main .content1 .classify .calssify-all .classify-bottom{
+    width: 278px;
+    height: 183px;
+    box-sizing: border-box;
+    padding: 10px;
+    background-color: #F2F2F5;
+}
+.main .content1 .classify .calssify-all .classify-bottom img{
+    width: 260px;
+    height: 165px;
+    border-radius: 2px;
+}
+.main .content1 .classify .calssify-all:hover{
+    transform: scale(1.2);
+}
+/*产业平台 开始*/
+.main .content1 .industry h2{
+    font-size: 42px;
+    text-align: center;
+    width: 100%;
+    height: 42px;
+    box-sizing: border-box;
+    padding-top: 385px;
+    color: #333;
+}
+.main .content1 .industry p{
+    text-align: center;
+    margin-top: 68px;
+}
+.main .content1 .industry .platform{
+    width: 1180px;
+    margin: 40px auto 86px;
+    overflow: hidden;
+    padding-top: 40px;
+    /*margin-bottom: 86px;*/
+}
+.main .content1 .industry .platform .platform_li {
+    width: 34%;
+    float: left;
+    margin-top: 6px;
+}
+.main .content1 .industry .platform  .platform_li1{
+    width: 35%;
+}
+.main .content1 .industry .platform  .platform_li2{
+    width: 31%;
+}
+.main .content1 .industry .platform .platform_li .industry_top img{
+    float: left;
+}
+.main .content1 .industry .platform .platform_li .industry_top h3{
+    float: left;
+    font-size: 24px;
+    line-height: 70px;
+    color: #333;
+}
+.main .content1 .industry .platform .platform_li .industry_bottom{
+    float: left;
+    margin-left: 84px;
+}
+.main .content1 .industry .platform .platform_li .industry_bottom ul li{
+    float:none;
+    line-height: 30px;
+}
+/*IPad  产业平台*/
+@media (max-width:1024px){
+    .main .content1 .classify{
+        display: none;
+    }
+    .main .content1 .industry h2 {
+        padding-top: 30px;
+        font-size: 24px;
+    }
+    .main .content1 .industry p{
+        display: none;
+    }
+    .main .content1 .industry .platform{
+        width: 100%;
+        display: flex;
+        margin-top: 35px;
+        margin-bottom: 25px;
+        padding: 0;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    .main .content1 .industry .platform .platform_li{
+        float: left;
+        width: 45%;
+        height: 59px;
+        border: 1px solid #E5E5E5;
+        background-color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .main .content1 .industry .platform .platform_li .industry_top img{
+        width: 20px;
+        transform: translateY(27px);
+    }
+    .main .content1 .industry .platform .platform_li .industry_top h3 {
+        font-size: 16px;
+    }
+    .main .content1 .industry .platform .platform_li .industry_bottom {
+        display: none;
+    }
+}
+/*手机  产业平台*/
+@media (max-width:720px){
+    .main .mcontent1 {
+        display: block;
+        overflow: hidden;
+        background-color: #fff;
+    }
+    .main .mcontent1 ul li{
+        float: left;
+        width: 25%;
+        height: 70px;
+        text-align: center;
+    }
+    .main .mcontent1 ul li a img{
+        width: 20px;
+        height: 20px;
+        margin-top: 16px;
+    }
+    .main .mcontent1 ul li a p{
+        color: #333;
+    }
+    .main .content1 .industry .platform .platform_li {
+        height: 48px;
+    }
+}
+/*智慧城市 结束*/
+
+/*南威新闻 开始*/
+.main .content1 .news {
+    background-color: #fff;
+    overflow: hidden;
+    margin-bottom: 80px;
+}
+.main .content1 .h3{
+    font-size: 40px;
+    text-align: center;
+    color: #333;
+    line-height: 162px;
+    padding-top: 24px;
+}
+.main .content1 .news .new{
+    width: 1200px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+/*新闻左侧 开始*/
+.main .content1 .news .new .newsleft{
+    width: 624px;
+    height: 404px;
+    float: left;
+    position: relative;
+}
+.main .content1 .news .new .newsleft img{
+    width: 624px;
+    height: 404px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+/*  按钮 */
+.main .content1 .news .new .newsleft .btn{
+    position: absolute;
+    top: 50%;
+    /*z-index: 1;*/
+    width: 40px;
+    height: 49px;
+    background-color: #000;
+    opacity: 0.1;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main .content1 .news .new .newsleft .btn:hover{
+    opacity:0.3;
+}
+.main .content1 .news .new .newsleft .btnl{
+    left: 0;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+.main .content1 .news .new .newsleft .btnr{
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    right: 0;
+}
+/*  箭头 */
+.main .content1 .news .new .newsleft .jt{
+    position: absolute;
+    top: 50%;
+    display: block;
+    width: 14px;
+    height: 14px;
+    border: 2px solid #fff;
+    border-bottom:none;
+    border-left:none;
+    z-index: 99;
+}
+.main .content1 .news .new .newsleft  .jtleft{
+    transform: translateY(-50%) rotate(-135deg);
+    left: 7px;
+}
+.main .content1 .news .new .newsleft  .jtright{
+    right: 7px;
+    transform: translateY(-50%) rotate(45deg);
+}
+/*底部阴影*/
+.main .content1 .news .new .newsleft .nleft_bottom{
+    width: 100%;
+    height: 54px;
+    background-color:#000;
+    opacity: 0.5;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+}
+.main .content1 .news .new .newsleft .nleft_bottom1{
+    width: 100%;
+    height: 54px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 2;
+}
+/*底部文字*/
+.main .content1 .news .new .newsleft .nleft_bottom1 p{
+    float: left;
+    font-size: 16px;
+    line-height: 54px;
+    color: #fff;
+    margin-left: 19px;
+}
+/*右侧圆点*/
+.main .content1 .news .new .newsleft .nleft_bottom1 ul{
+    width: 78px;
+    height: 54px;
+    float: right;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 17px;
+}
+.main .content1 .news .new .newsleft .nleft_bottom1 ul li{
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #fff;
+
+}
+.main .content1 .news .new .newsleft .nleft_bottom1 ul li:nth-child(2){
+    background-color: #8F283C;
+}
+/* 新闻左侧 结束*/
+
+/*新闻右侧 开始*/
+.main .content1 .news .new .newsright{
+    width: 544px;
+    height: 417px;
+    float: right;
+}
+.content  .newsright ul li{
+    width: 544px;
+    height: 104px;
+    box-sizing: border-box;
+    border: 1px solid #eee;
+    border-top:none;
+    padding-top: 22px;
+    padding-left: 16px;
+}
+.content  .newsright ul li:first-child{
+    height: 105px;
+    border-top:1px solid #eee;
+}
+.content  .newsright ul li:hover{
+    border-left:2px solid #8F283C;
+}
+.content  .newsright ul li .date{
+    float: left;
+    width: 64px;
+    height: 60px;
+}
+.content  .newsright ul li .date span{
+    color: #8F283C;
+    line-height: 33px;
+}
+.content  .newsright ul li .date span b{
+    font-size: 30px;
+    font-weight: normal;
+}
+.content  .newsright ul li .text{
+    float: left;
+    width: 397px;
+    margin-left: 23px;
+}
+.content  .newsright ul li .text a{
+    color: #8F283C;
+    font-size: 16px;
+}
+.content  .newsright ul li .text p{
+    margin-top: 14px;
+    line-height: 18px;
+}
+.content  .newsright ul li .text a:hover{
+    text-decoration: underline;
+}
+/*新闻右侧 结束*/
+
+@media (max-width: 1024px) {
+    .main .content1 .news{
+        width: 100%;
+        margin-bottom: 0;
+    }
+    .main .content1 .news .h3{
+        font-size: 22px;
+        line-height: 64px;
+        margin-top: 15px;
+        padding: 0;
+    }
+    .main .content1 .news .new{
+        width: 100%;
+    }
+    .main .content1 .news .new .newsleft{
+        width: 95%;
+        height: 618px;
+        float: none;
+        margin: 0 auto;
+    }
+    .main .content1 .news .new .newsright{
+        display: none;
+    }
+    .main .content1 .news .new .newsleft img{
+        width: 100%;
+        height: 618px;
+    }
+}
+@media (max-width: 720px){
+    .main .content1 .news{
+        margin-bottom: 20px;
+    }
+    .main .content1 .news .new .newsleft {
+        height: 235px;
+    }
+    .main .content1 .news .new .newsleft img{
+        height: 235px;
+    }
+    .main .content1 .news .new .newsleft .nleft_bottom{
+        height: 35px;
+    }
+    .main .content1 .news .new .newsleft .nleft_bottom1{
+        height: 35px;
+    }
+    .main .content1 .news .new .newsleft .nleft_bottom1 ul{
+        display: none;
+    }
+    .main .content1 .news .new .newsleft .nleft_bottom1 p {
+        font-size: 12px;
+        line-height: 35px;
+    }
+}
+/*南威新闻 结束*/
+
+/*公司简介 开始*/
+
+/*公司简介内容 开始*/
+.main .content1 .aboutus{
+    width: 100%;
+    background-color: #F5F5F5;
+    overflow: hidden;
+}
+.main .content1 .aboutus .about-all{
+    width: 1200px;
+    margin: 0 auto 90px;
+    overflow: hidden;
+}
+.main .content1 .aboutus .about-all .aboutus_left{
+    width: 583px;
+    /*height: 321px;*/
+    float: left;
+}
+.main .content1 .aboutus .about-all .aboutus_left p{
+    text-indent: 2em;
+    line-height: 25px;
+}
+.main .content1 .aboutus .about-all .aboutus_left .more{
+    width: 132px;
+    height: 48px;
+    text-align: center;
+    line-height: 48px;
+    background-color: #8F283C;
+    margin-top: 34px;
+    font-size: 16px;
+}
+.main .content1 .aboutus .about-all .aboutus_left .more a{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+}
+/*视频 开始*/
+.main .content1 .aboutus .about-all .aboutus_right{
+    width: 570px;
+    height: 321px;
+    float: right;
+    position: relative;
+}
+.main .content1 .aboutus .about-all .aboutus_right video{
+    width: 100%;
+    height: 100%;
+}
+.main .content1 .aboutus .about-all .aboutus_right .start{
+    width: 90px;
+    height: 45px;
+    box-sizing: border-box;
+    border: 2px solid #fff;
+    border-radius: 9px;
+    background-color: #000;
+    opacity:0.5;
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.main .content1 .aboutus .about-all .aboutus_right .start span{
+    display: inline-block;
+    border: 9px solid transparent;
+    border-left:14px solid #fff;
+    transform: translateX(7px);
+}
+.main .content1 .aboutus .about-all .aboutus_right:hover .start{
+    opacity:0.2;
+}
+/*视频 结束*/
+
+@media (max-width: 1024px) {
+    .main .content1 .aboutus .h3{
+        display: none;
+    }
+    .main .content1 .aboutus .about-all{
+        width: 95%;
+        margin-bottom: 30px;
+    }
+    .main .content1 .aboutus .about-all .aboutus_left{
+        width: 50%;
+        float: right;
+        padding-top: 10px;
+    }
+    .main .content1 .aboutus .about-all .aboutus_right{
+        width: 45%;
+        height: 260px;
+        float: left;
+        padding-top: 10px;
+    }
+    .main .content1 .aboutus .about-all .aboutus_right video {
+        width: 100%;
+        height: 260px;
+    }
+}
+@media (max-width: 720px) {
+    .main .content1 .aboutus .h3{
+        display: block;
+        font-size: 22px;
+        line-height: 64px;
+        padding: 0;
+    }
+    .main .content1 .aboutus .about-all{
+        width: 95%;
+        margin: 0 auto 30px;
+    }
+    .main .content1 .aboutus .about-all .aboutus_left{
+        width: 100%;
+        display: block;
+        padding-bottom: 30px;
+    }
+    .main .content1 .aboutus .about-all .aboutus_right{
+        float: left;
+        width: 100%;
+    }
+}
+/*公司简介内容 结束*/
+.footer{
+    width: 100%;
+    background-color: #F1F1F1;
+}
+.footer .ftop{
+    width: 1200px;
+    height: 239px;
+    margin: 0px auto;
+    padding:65px 0;
+
+}
+.footer .ftop .ftopleft{
+    float: left;
+    width: 452px;
+    height: 100%;
+    border-right:1px solid #D7D7D7;
+}
+.footer .ftop .ftopleft img{
+    float: left;
+    border: 1px solid #8F283C;
+    margin-right: 34px;
+}
+.footer .ftop .ftopleft .text1{
+    float: left;
+}
+.footer .ftop .ftopleft .text1 .color{
+    color: #8F283C;
+}
+.footer .ftop .ftopleft .text1 h3{
+    font-size: 30px;
+}
+.footer .ftop .ftopleft .text1 p{
+    line-height: 28px;
+}
+.footer .ftop .ftopleft .text1 ul li{
+    line-height: 33px;
+}
+.footer .ftop .ftopright{
+    float: left;
+    margin-left: 30px;
+}
+.footer .ftop .ftopright ul .des{
+    float: left;
+    font-size: 18px;
+    position: relative;
+    margin-right: 35px;
+}
+.footer .ftop .ftopright ul .des span{
+    display: inline-block;
+    margin-bottom: 15px;
+    color: #333;
+}
+.footer .ftop .ftopright ul .des p{
+    font-size: 14px;
+    line-height: 33px;
+}
+.footer .ftop .ftopright ul .des p a:hover{
+    color: #8F283C;
+    text-decoration: underline;
+}
+.footer .fbottom{
+    width: 100%;
+    line-height: 40px;
+    text-align: center;
+    background-color: #DADADA;
+}
+@media (max-width: 1024px) {
+    .footer .ftop{
+        display: none;
+    }
+}
+@media (max-width: 720px){
+    .main .content1 .aboutus {
+        height: 710px;
+    }
+    .main .content1 .aboutus .about-all .aboutus_right{
+        padding: 0;
+    }
+    .main .content1 .aboutus .about-all .aboutus_left{
+        padding-bottom: 0;
+    }
+    .footer .fbottom{
+        display: none;
+    }
+}
